@@ -33,7 +33,7 @@ exports.createClient = async (req, res) => {
   }
 };
 
-// Get all clients
+//Get Top Client
 exports.getAllClients = async (req, res) => {
   try {
     // Find the agency with the top client(s) with maximum total bill

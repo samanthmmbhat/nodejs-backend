@@ -5,6 +5,7 @@ const { verifyToken } = require('./middleware');
 
 // Client CRUD routes
 router.post('/create', verifyToken,clientController.createClient);
+//GET Top Client
 router.get('/', verifyToken,clientController.getAllClients);
 router.get('/:id', verifyToken,clientController.getClientById);
 router.put('/:id', verifyToken,clientController.updateClient);
